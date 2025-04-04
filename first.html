@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="Mstyle.css">
+</head>
+<body>
+
+    <!-- Modal Popup -->
+    
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#our-work">Our Work</a></li>
+            <li><a href="#services">Services</a></li>
+          <li><a href="#packages">Packages</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section (Home) -->
+    <section id="home">
+        <div class="hero-background">
+            <video id="heroVideo" autoplay muted loop>
+                <source id="heroVideoSource" src="SENDOFFJUX.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-content">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Exploring creativity through design and development</p>
+                <a href="#our-work" class="cta-button">Explore Our Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work Section -->
+    <section id="our-work">
+    <h2>Our Work</h2>
+    <div class="filters">
+        <button class="filter-btn" onclick="filterProjects('wedding')">Wedding</button>
+        <button class="filter-btn" onclick="filterProjects('engagement')">Engagement</button>
+        <button class="filter-btn" onclick="filterProjects('corporate')">Corporate</button>
+        <button class="filter-btn" onclick="filterProjects('sendoff')">Send Off</button>
+    </div>
+    <div class="projects">
+        <!-- Project Example 1 -->
+        <div class="project-card wedding">
+            <div class="project-media">
+                <img src="hymon.jpg" alt="Wedding Project">
+                <video src="TRY.mp4" controls=""></video>
+                <!-- Alternatively for a video -->
+                <!-- <video src="path-to-your-video.mp4" controls></video> -->
+            </div>
+            <div class="project-details">
+                <h3>Wedding Project</h3>
+                <p>Highlight of a wedding project.</p>
+            </div>
+        </div>
+        <!-- Project Example 2 -->
+        <div class="project-card engagement">
+            <div class="project-media">
+                <img src="hymon.jpg" alt="Engagement Project">
+                <video src="TRY.mp4" controls=""></video>
+                
+                <!-- <video src="path-to-your-video.mp4" controls></video> -->
+            </div>
+            <div class="project-details">
+                <h3>Engagement Project</h3>
+                <p>Short description of the engagement project.</p>
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+</section>
+
+    <!-- Services Section -->
+        <!-- Wedding Service -->
+  <section id="services">
+        <div class="service-card">
+            <h3>Wedding</h3>
+            <img src="hymon.jpg" alt="Wedding Service Image">
+            <p>Full-service wedding photography and videography to capture your special day, from preparation to the last dance.</p>
+        </div>
+
+        <!-- Engagement Service -->
+        <div class="service-card">
+            <h3>Engagement</h3>
+            <img src="engagement-service.jpg" alt="Engagement Service Image">
+            <p>Capturing the beautiful moments before the big day, with personalized engagement shoots and creative concepts.</p>
+        </div>
+
+        <!-- Photoshoot Service -->
+        <div class="service-card">
+            <h3>Photoshoot (Indoor & Outdoor)</h3>
+            <img src="photoshoot-service.jpg" alt="Photoshoot Service Image">
+            <p>Providing stunning photoshoots both indoors and outdoors, tailored to your personal or event style.</p>
+        </div>
+
+        <!-- Corporate Events Service -->
+        <div class="service-card">
+            <h3>Corporate Events</h3>
+            <img src="corporate-service.jpg" alt="Corporate Event Service Image">
+            <p>Professional photography and videography for corporate events, conferences, seminars, and product launches.</p>
+        </div>
+
+        <!-- Send-off & Kitchen Party Service -->
+        <div class="service-card">
+            <h3>Send-off & Kitchen Party</h3>
+            <img src="sendoff-service.jpg" alt="Send Off & Kitchen Party Service Image">
+            <p>Preserving memories of send-offs, kitchen parties, and other celebrations with attention to every detail.</p>
+        </div>
+      <a href="#packages" class="service-link">View our packages</a>
+    </section>
+  
+    <!-- Packages Section -->
+    <section id="packages">
+        <h2>Our Packages</h2>
+        <div class="package-card" id="standardp">
+            <h3>Standard Package</h3>
+            <p>✓Full Day Coverage</p>
+            <p>✓Pictures & Videos(4k)</p>
+            <p>✓Album 100photos</p>
+            <p>✓A4 wooden Frame</p>
+            <p>✓16Gb Flashdisk</p>
+          <div class="price">700,000Tsh/=</div> <!-- Price Tag -->
+        <a href="#contact-us" class="book-us-btn">Book Us</a>
+        </div>
+        <div class="package-card" id="classicp">
+            <h3>Classic Package</h3>
+            <p>✓Full Day Coverage</p>
+            <p>✓Pre-Wedding photoshoot & Video</p>
+            <p>✓Drone</p>
+            <p>✓Pictures & Videos(4k)</p>
+            <p>✓A3 Photobook(200photos)</p>
+            <p>✓3 Cameras & 3Cameramen</p>
+            <p>✓4HD Screens(55inch)</p>
+            <p>✓2 A3 Wooden Frames</p>
+            <p>✓32Gb FlashDisks(2)</p>
+          
+            <div class="price">1,500,000Tsh/=</div> <!-- Price Tag -->
+        <a href="#contact-us" class="book-us-btn">Book Us</a>
+        </div>
+        <div class="package-card" id="platnump">
+            <h3>Platinum Package</h3>
+          <p>✓Full Day Coverage</p>
+          <p>✓Pre-Wedding photoshoot & video</p>
+          <p>✓Pictures & Videos(4k)</p>
+          <p>✓A3 photobook(300photos)</p>
+          <p>✓Drone</p>
+          <p>✓360 booth</p>
+          <p>✓3 cameras & 3 cameramen</p>
+          <p>✓5HD screens(55inch)</p>
+          <p>✓2 A3 Wooden Frames</p>
+          <p>✓1 A2 Wooden Frame</p>
+          <p>✓32Gb FlashDisks(2)</p>
+          <p>✓Photography Session After Marriage(10photos)</p>
+          
+          <div class="price">$2,000,000Tsh/=</div> <!-- Price Tag -->
+        <a href="#contact-us" class="book-us-btn">Book Us</a>
+        </div>
+      <div class="package-card" id="royalp">
+          <h3>Royal Package</h3>
+        <p>✓Full Day Coverage</p>
+        <p>✓Pictures and Videos(4k)</p>
+        <p>✓A2 photobook(30pages)</p>
+        <p>✓Drone</p>
+        <p>✓Pre-wedding photoshoot & Video</p>
+        <p>✓360 booth</p>
+        <p>✓4 cameras & 4 cameramen</p>
+        <p>✓6HD screens(55inch)</p>
+        <p>✓2 A3 Wooden Frames</p>
+        <p>✓2 A2 Wooden Frame</p>
+        <p>✓32Gb FlashDisks(3)</p>
+        <p>✓Photography Session After Marriage(10photos)</p>
+        <p>✓Banner</p>
+        <p>✓Location Payment Covered</p>
+        <div class="price">3,500,000Tsh/=</div> <!-- Price Tag -->
+        <a href="#contact-us" class="book-us-btn">Book Us</a>
+      </div>
+    </section>
+
+
+    <!-- Contact Us Section -->
+    <section id="contact-us">
+        <form>
+          <h2>Contact Us</h2>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="Mjava.js"></script>
+</body>
+</html>

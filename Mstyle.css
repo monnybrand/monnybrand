@@ -1,0 +1,680 @@
+/* Reset some styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+/* Hero Section (Home) */
+#home {
+    position: relative;
+    height: 100vh;  /* Makes the hero section cover the full viewport height */
+    overflow: hidden;  /* Prevents overflow in case of extra large content */
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  /* Makes the background cover the full height of the viewport */
+    overflow: hidden;
+}
+
+#heroVideo {
+    width: 100%;
+    height: 100%;  /* Ensures the video covers the full height */
+    object-fit: cover;  /* Ensures the video covers the container without distortion */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;  /* Centers the content vertically */
+    left: 50%;
+    transform: translate(-50%, -50%);  /* Adjusts the content to be centered */
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #ff8a00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e77b00;
+}
+
+/* Our Work Section */
+/* Our Work Section */
+#our-work {
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 50px 20px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #444;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    margin: 15px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-media img,
+.project-media video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-details {
+    padding: 20px;
+}
+
+.project-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #our-work h2 {
+        font-size: 2rem;
+    }
+
+    .filters {
+        top: 30%;
+    }
+
+    .projects {
+        top: 50%;
+        width: 100%;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    #our-work h2 {
+        font-size: 1.6rem;
+    }
+
+    .filters {
+        top: 25%;
+    }
+
+    .projects {
+        top: 45%;
+    }
+
+    .project-card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Services Section */
+#services {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.service-card {
+    margin: 20px;
+    display: inline-block;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+}
+
+/* Contact Us Section */
+#contact-us {
+    position: relative;
+    height: 100vh;  /* Make the section cover the full viewport height */
+    background-color: #f4f4f4;  /* You can customize the background color */
+    padding: 0;  /* Remove any padding to ensure it spans the full height */
+    display: flex;
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;  /* Center content vertically */
+}
+
+#contact-us h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;  /* Limit the form width */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #ff8a00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e77b00;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    #contact-us h2 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input, textarea {
+        font-size: 0.95rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #contact-us h2 {
+        font-size: 1.6rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.95rem;
+    }
+}
+
+/* Services Section */
+#services {
+    background-color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .services-section {
+        flex-direction: column;  /* Stacks the services vertically on smaller screens */
+    }
+}
+
+.services-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-link{
+    align-content: center;
+    
+}
+.service-card {
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+//* Packages Section */
+/* Packages Section */
+#packages {
+    position: relative;
+    min-height: 100vh;  /* Make the section cover at least the full viewport height */
+    background-color: #f4f4f4;  /* You can customize the background color */
+    padding: 0 20px;  /* Add padding on the sides for better responsiveness */
+    display: flex;
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;  /* Center content vertically */
+    flex-direction: column;
+}
+
+#packages h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.package-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Grid layout that adapts based on screen size */
+    gap: 20px;  /* Space between cards */
+    width: 100%;
+    max-width: 1200px;  /* Maximum width of the grid */
+    margin: 0 auto;  /* Center the grid */
+}
+
+.package-card {
+    background-color: #ffffff;  /* Default background for the cards */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Custom background colors for each package */
+
+
+.package-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.package-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 2rem;
+    color: #ff8a00;  /* Customize the price color */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.book-us-btn {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background-color: #ff8a00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.book-us-btn:hover {
+    background-color: #e77b00;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);  /* Slightly raise the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Add a hover effect to raise the card */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    #packages h2 {
+        font-size: 2rem;
+    }
+
+    .package-card {
+        padding: 20px;
+    }
+
+    .package-card h3 {
+        font-size: 1.6rem;
+    }
+
+    .package-card p {
+        font-size: 0.95rem;
+    }
+
+    .price {
+        font-size: 1.8rem;
+    }
+
+    .book-us-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    #packages h2 {
+        font-size: 1.6rem;
+    }
+
+    .package-card {
+        padding: 15px;
+    }
+
+    .package-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .package-card p {
+        font-size: 0.9rem;
+    }
+
+    .price {
+        font-size: 1.5rem;
+    }
+
+    .book-us-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+
+/*new adapting css */
+/* General Styling */
+
+/* Services Section */
+#services {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Service Cards */
+.service-card {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    overflow: hidden; /* Prevents image from overflowing the card */
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Image Styling */
+.service-card img {
+    width: 100%;
+    height: 200px;  /* This ensures a fixed height but the width is responsive */
+    object-fit: cover;  /* Ensures the image fills the container without distorting */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Text Styling */
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.service-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.service-link:hover {
+    background-color: #ddd;
+}
+
+/*Screen adapting/*
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Services Section */
+#services {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Flexbox Layout for Services */
+#services .service-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Service Card */
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* Ensures three cards per row */
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;  /* Ensures the image fits without distortion */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design: Mobile First */
+
+/* Mobile devices (small screens) */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #services h2 {
+        font-size: 1.6rem;
+    }
+
+    #services .service-card-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-card {
+        width: 100%;  /* Stacks cards vertically on small screens */
+    }
+
+    .service-card img {
+        height: 150px;  /* Adjust image height for smaller screens */
+    }
+}
+
+/* Tablets and Medium Devices (up to 768px) */
+@media (max-width: 768px) {
+    #services .service-card-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .service-card {
+        width: 48%; /* 2 cards per row on medium devices */
+    }
+}
+
+/* Larger Devices (Laptops/Desktops) */
+@media (min-width: 1024px) {
+    #services .service-card-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .service-card {
+        width: calc(33.333% - 20px); /* 3 cards per row on large screens */
+    }
+}
+
+.service-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.service-link:hover {
+    background-color: #ddd;
+}
+
+h1, h2 {
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);  /* Soft glow effect */
+}
